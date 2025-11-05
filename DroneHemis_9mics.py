@@ -414,9 +414,9 @@ for i_plot in n_plots:
     phi_up_hemisphere = np.tile(Hemisphere[add_row_up,:], (add_row_up,1))
     phi_down_hemisphere = np.tile(Hemisphere[add_row_up + LEVELS_th_ph.shape[0]-1,:], (add_row_down,1))
     """Hemisphere[0:add_row_up, :] = phi_up_hemisphere
-    Hemisphere[add_row_up + LEVELS_th_ph.shape[0]::, :] = phi_down_hemisphere"""
+    Hemisphere[add_row_up + LEVELS_th_ph.shape[0]::, :] = phi_down_hemisphere""" # replicating the last and first row n phi component.
     Hemisphere[0:add_row_up, :] = Hemisphere.min()
-    Hemisphere[add_row_up + LEVELS_th_ph.shape[0]::, :] = Hemisphere.min()
+    Hemisphere[add_row_up + LEVELS_th_ph.shape[0]::, :] = Hemisphere.min() #  here direct extrapolation if NORAH is applied
     
     Hemisphere = np.round(Hemisphere,1)
     ## Hemisphere #Saving the full hemisphere by BNADS and OASPL

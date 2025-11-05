@@ -282,11 +282,11 @@ def plot_int3D(th, ph, rad_to_deprop, LEVELS_th_ph, i_plot, DID, WIND):
         showscale=False
     ))
     fig.update_layout(scene=dict(
-                        xaxis_title='X (N-S)',
-                        yaxis_title='Y (W-E)',
-                        zaxis_title='Z (Up)',
-                        aspectmode='data'
-                        ),
+        xaxis=dict(title='X (N-S)', showticklabels=False),
+        yaxis=dict(title='Y (W-E)', showticklabels=False),
+        zaxis=dict(title='Z (Up)', showticklabels=False),
+        aspectmode='data'
+    ),
                         title=f"SPL Hemispheres {DID} {i_plot}",
                         margin=dict(l=0, r=0, t=50, b=0))
     
