@@ -66,7 +66,7 @@ rad = 1 #[m] # radius of the hemisphere to depropagate the sound levels
 ##########################################
 # Measurement name metadata in the filename:
 Cases    = [
-    ['Ed','M3',10,'F05','Y','E','dw', 1],
+    # ['Ed','M3',10,'F05','Y','E','dw', 1],
     # ['Ed','M3',10,'F05','Y','E','uw', 2],
     # ['Ed','M3',10,'F05','Y','W','uw', 2],
     # ['Ed','M3',10,'F15','Y','E','uw', 2],
@@ -85,6 +85,9 @@ Cases    = [
     # ['EE','T1',25,'F15','N','S','dw', 2],
     # ['EE','T1',25,'F15','N','S','dw', 1],
     # ['EE','T1',25,'F15','N','S','dw', 2]
+    
+    # ['EE','T1',25,'F15','Y','S','dw', 2],
+    ['EE','T1',25,'F15','Y','S','uw', 1],
     ] # add more cases if needed [starting, wind, payload, droneID, recording]
 case = 0 # choose the case to process
 # for case in range(len(Cases)):
