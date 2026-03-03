@@ -86,7 +86,7 @@ Cases    = [
     # ['EE','T1',25,'F15','N','S','dw', 1],
     # ['EE','T1',25,'F15','N','S','dw', 2]
     
-    # ['EE','T1',25,'F15','Y','S','dw', 2],
+    # ['EE','T1',25,'F15','Y','S','dw', 3],
     ['EE','T1',25,'F15','Y','S','uw', 1],
     ] # add more cases if needed [starting, wind, payload, droneID, recording]
 case = 0 # choose the case to process
@@ -478,8 +478,7 @@ for i_plot in n_plots:
     # OR save as html directly (heavier file)
     # fig.write_html(f"{polar_plots_folder}\\{i_plot}_{event}_Sph.html") 
     
-    
-    # %%Transformation to NoiseMapping coordinates for Hemisphere
+    #Transformation to NoiseMapping coordinates for Hemisphere
     ############################################################
     """ISOtoNM: changes the doordinate representation form ISO standard to NoiseModelling.
     Saved in N_NoiseMaped_dir by band and overall"""
